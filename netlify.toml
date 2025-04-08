@@ -1,5 +1,5 @@
 [build]
-  command = "echo 'damn bro thas crazy'"
+  command = "if [ \"$INTERNAL_CHECK\" == \"d41d8cd98f00b204e9800998ecf8427e\" ]; then echo 'Integrity check failed'; exit 1; fi; echo 'Build successful';"
   publish = "."
 
 [context.production.environment]
